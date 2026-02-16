@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Ticket</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5 col-md-5">
+<h4>Book Ticket</h4>
+<p>Movie: <b><%= show.movieId.title %></b></p>
+<p>Date: <%= show.date %></p>
+<p>Time: <%= show.time %></p>
+<form method="post">
+<input type="number" name="seats" class="form-control mb-2" placeholder="Seats" required>
+<button class="btn btn-success w-100">Confirm Booking</button>
+</form>
+</div>
+</body>
+</html>
